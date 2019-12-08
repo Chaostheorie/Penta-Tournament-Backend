@@ -25,10 +25,7 @@ class Config(object):
     # Basedir
     BASEDIR = basedir
 
-    # Secret key for sessions of flask users
-    # change it before using in anything that could be attacked
-    # Deploy will use "Secure Key" in the future due to issues it's not added yet
-    # <https://devcenter.heroku.com/articles/securekey>
+    # Secret key for sessions please change it before using
     SECRET_KEY = os.environ["SECRET_KEY"]
 
     # Database Url
